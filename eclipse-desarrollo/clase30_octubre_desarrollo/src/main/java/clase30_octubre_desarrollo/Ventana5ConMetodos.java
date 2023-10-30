@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 public class Ventana5ConMetodos extends JFrame {
 	protected JPanel panel;
 
-	protected void inicializarVentana() {
+	protected void inicializarVentana() { //inicializamos la ventana inicial
 		setSize(300, 300);
 		setVisible(true);
 		panel = new JPanel();
@@ -16,7 +16,7 @@ public class Ventana5ConMetodos extends JFrame {
 
 	}
 
-	private void agregarBoton(String nombreBoton, int x, int y) {
+	private void agregarBoton(String nombreBoton, int x, int y) { // agrega botones para la ventana
 		JButton botonBienvenido = new JButton(nombreBoton);
 		botonBienvenido.setBounds(x, y, 100, 50);
 		panel.add(botonBienvenido);

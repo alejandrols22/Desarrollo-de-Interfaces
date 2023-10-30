@@ -59,7 +59,7 @@ public class EjercicioActionListener extends Ventana5ConMetodos {
 			y += 60;
 		}
 
-		ventana.agregarBotonRedimensionar(50, y); // 
+		ventana.agregarBotonRedimensionar(50, y); // El boton aparece pero para verse mejor deberia hacer la ventana mas
+													// grande
 	}
 }
-	
