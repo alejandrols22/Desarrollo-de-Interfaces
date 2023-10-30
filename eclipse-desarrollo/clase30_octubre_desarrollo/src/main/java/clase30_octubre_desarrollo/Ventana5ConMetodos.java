@@ -5,9 +5,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Ventana5ConMetodos extends JFrame {
-	private JPanel panel;
+	protected JPanel panel;
 
-	private void inicializarVentana() {
+	protected void inicializarVentana() {
 		setSize(300, 300);
 		setVisible(true);
 		panel = new JPanel();
@@ -23,13 +23,28 @@ public class Ventana5ConMetodos extends JFrame {
 	}
 
 	public static void main(String[] args) {
+		/*
+		 * Ventana5ConMetodos ventana = new Ventana5ConMetodos();
+		 * ventana.inicializarVentana();
+		 * 
+		 * int y=50; for (int i=1; i<4; i++) { ventana.agregarBoton("Boton "+i, 50, y);
+		 * y=y+50; }
+		 */
+
+		// ahora los botones van a ser 3 aceptar cancelar siguiente usando un array
+
 		Ventana5ConMetodos ventana = new Ventana5ConMetodos();
 		ventana.inicializarVentana();
 
-		String[] nombresBotones = { "boton1", "boton2", "boton3" };
-		for (int i = 0; i < nombresBotones.length; i++) {
-			ventana.agregarBoton(nombresBotones[i], 50, 50 * i + 60);
-		}
+		String[] botonesNombres = { "Aceptar", "Cancelar", "Siguiente" };
 
+		short y = 50;
+		for (String nombre : botonesNombres) {
+			ventana.agregarBoton(nombre, 60, y);// ponemos 60 ya que es mas que 50 y lo que generara es un espacio entre
+												// botones
+			y += 60;
+			
+			
+		}
 	}
 }
