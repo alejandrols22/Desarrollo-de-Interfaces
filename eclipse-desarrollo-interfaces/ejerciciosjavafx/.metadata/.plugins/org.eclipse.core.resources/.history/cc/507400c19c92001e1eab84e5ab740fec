@@ -1,0 +1,62 @@
+package componentesbasicos;
+
+
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EjercicioRadioButton6 extends JFrame {
+    public EjercicioRadioButton6() {
+        setTitle("Ejemplo Matrix");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        JRadioButton radioButton1 = new JRadioButton("Pastilla Azul");
+        JRadioButton radioButton2 = new JRadioButton("Pastilla Roja");
+        
+        // Listeners for the radio buttons
+        radioButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(EjercicioRadioButton6.this,
+                        "Tomas la pastilla azul: la historia termina, despiertas en tu cama y crees lo que quieras creer.",
+                        "Elección en la Matrix",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        radioButton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(EjercicioRadioButton6.this,
+                        "Tomas la pastilla roja: te quedas en el país de las maravillas y te muestro cuán profundo es el agujero del conejo.",
+                        "Elección en la Matrix",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+        
+        // Group for the radio buttons to ensure only one can be selected at a time
+        ButtonGroup group = new ButtonGroup();
+        group.add(radioButton1);
+        group.add(radioButton2);
+        
+        // Panel to contain the radio buttons
+        JPanel panel = new JPanel();
+        panel.add(radioButton1);
+        panel.add(radioButton2);
+        
+        // Adding the panel to the frame
+        getContentPane().add(panel);
+
+        // Pack the components within the frame
+        pack();
+        // Center the frame on the screen
+        setLocationRelativeTo(null);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new EjercicioRadioButton5().setVisible(true);
+        });
+    }
+}

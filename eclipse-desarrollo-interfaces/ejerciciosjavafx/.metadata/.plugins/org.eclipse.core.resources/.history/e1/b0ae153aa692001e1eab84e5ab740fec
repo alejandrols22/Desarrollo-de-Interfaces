@@ -1,0 +1,59 @@
+package jdialog;
+
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Ejercicio4TextField4JDialog  extends JFrame{
+
+
+	
+	    
+	    public Ejercicio4TextField4JDialog() {
+	        setTitle("Ejemplo JTextField con nombre y apellidos");
+	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        setLayout(new GridLayout(0, 1)); // Use GridLayout for a single-column layout
+	        
+	        // Create labels and text fields for user input
+	        JLabel nameLabel = new JLabel("Indica tu nombre:");
+	        JTextField nameTextField = new JTextField(20);
+	        
+	        JLabel ageLabel = new JLabel("Indica tu edad:");
+	        JTextField ageTextField = new JTextField(20);
+	        
+	        JLabel addressLabel = new JLabel("Dirección:");
+	        JTextField addressTextField = new JTextField(20);
+	        
+	        JLabel cityLabel = new JLabel("Ciudad:");
+	        JTextField cityTextField = new JTextField(20);
+	        
+	        JLabel provinceLabel = new JLabel("Provincia:");
+	        JTextField provinceTextField = new JTextField(20);
+	        
+	        JButton acceptButton = new JButton("Aceptar");
+	        
+	        // Add components to the frame
+	        add(nameLabel);
+	        add(nameTextField);
+	        add(ageLabel);
+	        add(ageTextField);
+	        add(addressLabel);
+	        add(addressTextField);
+	        add(cityLabel);
+	        add(cityTextField);
+	        add(provinceLabel);
+	        add(provinceTextField);
+	        add(acceptButton);
+	        
+	        // Adjust the window size automatically to fit its content
+	        pack();
+	        // Center the window on the screen
+	        setLocationRelativeTo(null);
+	    }
+
+	    public static void main(String[] args) {
+	        SwingUtilities.invokeLater(() -> {
+	            new Ejercicio4TextField4JDialog().setVisible(true);
+	        });
+	    }
+	}

@@ -1,0 +1,56 @@
+package jdialog;
+
+
+import javax.swing.*;
+import java.awt.*;
+
+
+
+	public class Ejercicio4TextField4JDialog extends JFrame {
+	    
+	    public Ejercicio4TextField4JDialog() {
+	        setTitle("Ejemplo JTextField con nombre y apellidos");
+	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS)); // Alineación vertical
+	        
+	        // Método para añadir un JLabel y un JTextField a un JPanel y añadirlo al content pane
+	        addLabelAndTextField("Indica tu nombre:");
+	        addLabelAndTextField("Indica tu edad:");
+	        addLabelAndTextField("Dirección:");
+	        addLabelAndTextField("Ciudad:");
+	        addLabelAndTextField("Provincia:");
+	        
+	        // Botón de aceptar
+	        JButton acceptButton = new JButton("Aceptar");
+	        acceptButton.setAlignmentX(Component.CENTER_ALIGNMENT); // Centrar el botón
+	        add(acceptButton);
+	        
+	        pack(); // Ajustar el tamaño de la ventana a los componentes
+	        setLocationRelativeTo(null); // Centrar en pantalla
+	    }
+
+	    private void addLabelAndTextField(String labelText) {
+	        JPanel panel = new JPanel();
+	        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS)); // Alineación vertical en el panel
+	        panel.setAlignmentX(Component.LEFT_ALIGNMENT); // Alineación a la izquierda
+
+	        JLabel label = new JLabel(labelText);
+	        JTextField textField = new JTextField(20);
+	        panel.add(label);
+	        panel.add(textField);
+	        
+	        add(panel); // Añadir el panel al content pane del JFrame
+	    }
+
+	    
+	
+
+	public static void main(String[] args) {
+	    // La creación de la GUI debe hacerse en el Event Dispatch Thread
+	    SwingUtilities.invokeLater(new Runnable() {
+	        public void run() {
+	        	Ejercicio4TextField4JDialogframe = new Ejercicio4TextField4JDialog();
+	            frame.setVisible(true);
+	        }
+	    });
+	}

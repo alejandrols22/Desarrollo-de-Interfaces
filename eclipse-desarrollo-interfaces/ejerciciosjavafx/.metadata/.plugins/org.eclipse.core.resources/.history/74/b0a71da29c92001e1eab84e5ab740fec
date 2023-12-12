@@ -1,0 +1,58 @@
+package componentesbasicos;
+
+
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EjercicioRadioButton6 extends JFrame {
+    public EjercicioRadioButton6() {
+        setTitle("Ejemplo JRadioButton");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        JRadioButton radioButton1 = new JRadioButton("Pastilla Azul");
+        JRadioButton radioButton2 = new JRadioButton("Pastilla Roja");
+        
+        // Add action listeners to radio buttons
+        radioButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(EjercicioRadioButton6.this,
+                        "Has elegido la Pastilla Azul - Bienvenido a la realidad",
+                        "Mensaje de la Matrix",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        radioButton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(EjercicioRadioButton6.this,
+                        "Has elegido la Pastilla Roja - Permanecerás en la fantasía",
+                        "Mensaje de la Matrix",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+        
+        // Solo necesitamos un grupo para que solo se pueda seleccionar una opción a la vez
+        ButtonGroup group = new ButtonGroup();
+        group.add(radioButton1);
+        group.add(radioButton2);
+        
+        JPanel panel = new JPanel();
+        panel.add(radioButton1);
+        panel.add(radioButton2);
+        
+        getContentPane().add(panel);
+
+        pack();
+        setLocationRelativeTo(null);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new EjercicioRadioButton5().setVisible(true);
+        });
+    }
+}

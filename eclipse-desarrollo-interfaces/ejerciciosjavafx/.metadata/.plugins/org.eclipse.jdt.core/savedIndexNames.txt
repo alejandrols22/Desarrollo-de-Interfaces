@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\2DAM\Desarrollo-de-Interfaces\eclipse-desarrollo-interfaces\ejerciciosjavafx\.metadata\.plugins\org.eclipse.jdt.core
+3857182046.index
+1327081952.index
+1865797976.index
+1702504573.index
