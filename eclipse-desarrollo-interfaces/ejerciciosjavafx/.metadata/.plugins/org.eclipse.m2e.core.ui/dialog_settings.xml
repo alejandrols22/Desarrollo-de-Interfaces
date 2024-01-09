@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\2DAM\Desarrollo-de-Interfaces\eclipse-desarrollo-interfaces\ejerciciojavafx_04_12_23\bin\application\Main.java"/>
 			<item value="C:\2DAM\Desarrollo-de-Interfaces\eclipse-desarrollo-interfaces\ejerciciosjavafx\ejerciciojavafx_04_12_23\src"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -56,12 +57,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="examen_desarrollointerfaces_2dam"/>
 			<item value="desarrollo_interfaces_04_12_23"/>
 		</list>
 		<list key="name">
+			<item value="examen_desarrollointerfaces_2dam"/>
 			<item value="desarrollo_interfaces_04_12_23"/>
 		</list>
 		<list key="artifactId">
+			<item value="examen_desarrollointerfaces_2dam"/>
 			<item value="desarrollo_interfaces_04_12_23"/>
 		</list>
 		<list key="projectNameTemplate">
