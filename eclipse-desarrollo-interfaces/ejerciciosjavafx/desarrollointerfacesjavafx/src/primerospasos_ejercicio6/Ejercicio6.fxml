@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="10" style="-fx-background-color: #ffffff; -fx-padding: 20;" fx:controller="primerospasos_ejercicio6.SimpleController">
+    <Label text="Usuario:" />
+    <TextField fx:id="usernameField" promptText="Enter your username" />
+    <Label text="Password:" />
+    <PasswordField fx:id="passwordField" promptText="Enter your password" />
+    <Button text="Enviar" onAction="#handleLoginAction" />
+    <Text fx:id="loginResultText" />
+</VBox>

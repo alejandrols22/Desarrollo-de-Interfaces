@@ -1,4 +1,4 @@
-!SESSION 2024-01-15 11:40:10.008 -----------------------------------------------
+!SESSION 2024-01-18 22:39:00.306 -----------------------------------------------
 eclipse.buildId=4.25.0.I20220831-1800
 java.version=19
 java.vendor=Oracle Corporation
@@ -6,9 +6,9 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.jface 2 0 2024-01-15 11:40:24.792
+!ENTRY org.eclipse.jface 2 0 2024-01-18 22:39:17.879
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2024-01-15 11:40:24.792
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-01-18 22:39:17.879
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
@@ -26,7 +26,7 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2024-01-15 11:40:24.792
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-01-18 22:39:17.879
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
@@ -45,7 +45,7 @@ Binding(ALT+SHIFT+R,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.egit.ui 2 0 2024-01-15 11:40:26.794
+!ENTRY org.eclipse.egit.ui 2 0 2024-01-18 22:39:20.371
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\Alejandro'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and

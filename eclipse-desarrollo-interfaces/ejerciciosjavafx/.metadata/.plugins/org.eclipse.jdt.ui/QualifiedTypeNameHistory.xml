@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="javafx.scene.Parent"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
 </qualifiedTypeNameHistroy>
