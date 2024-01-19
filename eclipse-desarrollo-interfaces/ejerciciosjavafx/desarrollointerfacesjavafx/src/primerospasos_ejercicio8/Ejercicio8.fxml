@@ -6,21 +6,20 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Boton1" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Boton2" />
          </children>
       </HBox>
    </top>
    <left>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Boton3" />
+            <Button mnemonicParsing="false" text="Boton4" />
          </children>
       </VBox>
    </left>
@@ -35,9 +34,9 @@
       <Label text="Center" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <HBox prefHeight="101.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox alignment="BOTTOM_LEFT" prefHeight="101.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Boton" />
          </children>
       </HBox>
    </bottom>
