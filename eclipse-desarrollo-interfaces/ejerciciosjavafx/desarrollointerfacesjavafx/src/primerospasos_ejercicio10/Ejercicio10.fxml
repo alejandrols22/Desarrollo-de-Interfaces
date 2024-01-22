@@ -2,63 +2,80 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.shape.Rectangle?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="tu.paquete.ControladorDeLaVista">
+<BorderPane style="-fx-background-color: #E0E0E0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="primerospasos_ejercicio3.SimpleController">
     
-    <!-- Menú en la parte superior -->
+    <!-- Menú en la parte superior con colores y estilos -->
     <top>
         <MenuBar>
-            <Menu text="Aplicación Avanzada">
-                <MenuItem text="Salir"/>
+            <Menu style="-fx-background-color: #333333; -fx-text-fill: #FFFFFF;" text="Aplicación Avanzada">
+                <MenuItem style="-fx-text-fill: #FFFFFF;" text="Salir" />
             </Menu>
         </MenuBar>
     </top>
     
-    <!-- Contenido central con un GridPane complejo -->
+    <!-- Contenido central con un GridPane más complejo -->
     <center>
-        <GridPane hgap="10" vgap="10">
-            <!-- Columna 1 con VBox -->
-            <VBox GridPane.columnIndex="0">
-                <Label text="Opción 1"/>
-                <Label text="Opción 2"/>
-                <Label text="Opción 3"/>
+        <GridPane hgap="15" style="-fx-background-color: #AAAAAA; -fx-padding: 20;" vgap="15">
+            <!-- Columna 1 con VBox y colores distintos para cada opción -->
+            <VBox spacing="10" GridPane.columnIndex="0">
+                <Label style="-fx-background-color: #FFCCCC; -fx-padding: 5;" text="Opción 1" />
+                <Label style="-fx-background-color: #CCFFCC; -fx-padding: 5;" text="Opción 2" />
+                <Label style="-fx-background-color: #CCCCFF; -fx-padding: 5;" text="Opción 3" />
             </VBox>
             
-            <!-- Columna 2 con botones -->
-            <HBox GridPane.columnIndex="1">
-                <Button text="Botón 1"/>
-                <Button text="Botón 2"/>
-                <Button text="Botón 3"/>
+            <!-- Columna 2 con botones y estilos de colores -->
+            <HBox spacing="10" GridPane.columnIndex="1">
+                <Button style="-fx-background-color: #FDD835;" text="Botón 1" />
+                <Button style="-fx-background-color: #FF7043;" text="Botón 2" />
+                <Button style="-fx-background-color: #42A5F5;" text="Botón 3" />
             </HBox>
             
-            <!-- Columna 3 con botones y VBox anidado -->
-            <VBox GridPane.columnIndex="2">
-                <Button text="Botón 4"/>
-                <Button text="Botón 5"/>
-                <Button text="Botón 6"/>
-                <VBox style="-fx-background-color: purple; -fx-padding: 10;">
-                    <Label text="Opción A" style="-fx-text-fill: white;"/>
-                    <Label text="Opción B" style="-fx-text-fill: white;"/>
-                    <Label text="Opción C" style="-fx-text-fill: white;"/>
-                </VBox>
+            <!-- Columna 3 con botones, VBox anidado y un StackPane para efectos visuales -->
+            <VBox spacing="10" GridPane.columnIndex="2">
+                <Button style="-fx-background-color: #BA68C8;" text="Botón 4" />
+                <Button style="-fx-background-color: #FFD54F;" text="Botón 5" />
+                <Button style="-fx-background-color: #4FC3F7;" text="Botón 6" />
+                <StackPane style="-fx-background-color: purple; -fx-padding: 10;">
+                    <Rectangle arcHeight="20" arcWidth="20" fill="#7E57C2" height="100" width="150" />
+                    <VBox>
+                        <Label style="-fx-text-fill: white;" text="Opción A" />
+                        <Label style="-fx-text-fill: white;" text="Opción B" />
+                        <Label style="-fx-text-fill: white;" text="Opción C" />
+                    </VBox>
+                </StackPane>
             </VBox>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
         </GridPane>
     </center>
     
-    <!-- Botones de acción en la parte inferior -->
+    <!-- Botones de acción en la parte inferior con colores -->
     <bottom>
-        <HBox spacing="10" alignment="CENTER">
-            <Button text="Aceptar" />
-            <Button text="Cancelar" />
+        <HBox alignment="CENTER" spacing="10" style="-fx-background-color: #616161; -fx-padding: 10;">
+            <Button style="-fx-background-color: #8BC34A;" text="Aceptar" />
+            <Button style="-fx-background-color: #F44336;" text="Cancelar" />
+         <RadioButton mnemonicParsing="false" text="Si" />
+         <RadioButton mnemonicParsing="false" text="No" />
         </HBox>
     </bottom>
 
 </BorderPane>
-
