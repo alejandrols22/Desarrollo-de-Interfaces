@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles_ejercicio7.MenuAvanzadoController">
+   <top>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="newItem" mnemonicParsing="false" onAction="#handleMenuAction" text="New"/>
+              <MenuItem fx:id="openItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Open"/>
+              <MenuItem fx:id="saveItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Save"/>
+              <MenuItem fx:id="printItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Print"/>
+              <MenuItem fx:id="propertiesItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Properties"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="undoItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Undo"/>
+              <MenuItem fx:id="redoItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Redo"/>
+              <MenuItem fx:id="copyItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Copy"/>
+              <MenuItem fx:id="pasteItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Paste"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="zoomInItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Zoom In"/>
+              <MenuItem fx:id="zoomOutItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Zoom Out"/>
+              <MenuItem fx:id="toggleFullscreenItem" mnemonicParsing="false" onAction="#handleMenuAction" text="Toggle Fullscreen"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutItem" mnemonicParsing="false" onAction="#handleMenuAction" text="About"/>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <!-- Rest of your layout -->
+</BorderPane>

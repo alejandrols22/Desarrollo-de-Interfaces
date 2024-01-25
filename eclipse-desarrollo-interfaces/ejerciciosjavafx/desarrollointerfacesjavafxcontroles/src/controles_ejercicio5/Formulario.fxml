@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles_ejercicio5.FormularioController">
+    <Label text="Formulario Avanzado"/>
+    
+    <TextField fx:id="textFieldNombre" promptText="Nombre"/>
+    <DatePicker fx:id="datePickerFecha"/>
+    
+    <HBox>
+        <RadioButton fx:id="radioButtonOpcion1" text="Opción 1" ToggleGroup="$grupoOpciones"/>
+        <RadioButton fx:id="radioButtonOpcion2" text="Opción 2" ToggleGroup="$grupoOpciones"/>
+        <RadioButton fx:id="radioButtonOpcion3" text="Opción 3" ToggleGroup="$grupoOpciones"/>
+    </HBox>
+    
+    <VBox>
+        <CheckBox fx:id="checkBoxA" text="Opción A"/>
+        <CheckBox fx:id="checkBoxB" text="Opción B"/>
+        <CheckBox fx:id="checkBoxC" text="Opción C"/>
+    </VBox>
+    
+    <ComboBox fx:id="comboBoxOpciones" promptText="Selecciona una opción">
+        
+    </ComboBox>
+    
+    <TextArea fx:id="textAreaComentarios" promptText="Comentarios adicionales"/>
+    
+    <Button text="Enviar" onAction="#handleEnviarAction"/>
+</VBox>
+
