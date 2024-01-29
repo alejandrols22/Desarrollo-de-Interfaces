@@ -1,0 +1,40 @@
+/* Estilos para el VBox principal */
+VBox {
+    -fx-background-color: #ffffff; /* Fondo blanco */
+    -fx-padding: 20;
+    -fx-spacing: 10; /* Espacio entre elementos hijos */
+    -fx-alignment: center; /* Alineación central de los elementos */
+}
+
+/* Estilos para las etiquetas (Label) */
+Label {
+    -fx-font-size: 14px; /* Tamaño de fuente */
+    -fx-font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de texto (TextField y PasswordField) */
+TextField, PasswordField {
+    -fx-prompt-text-fill: #888888; /* Color del texto de marcador de posición */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+    -fx-border-color: #cccccc; /* Color del borde */
+    -fx-border-width: 1px; /* Ancho del borde */
+    -fx-border-radius: 5px; /* Borde redondeado */
+    -fx-background-color: #f9f9f9; /* Color de fondo */
+    -fx-padding: 5px; /* Relleno interno */
+}
+
+/* Estilos para el botón (Button) */
+Button {
+    -fx-font-size: 16px; /* Tamaño de fuente */
+    -fx-background-color: #007bff; /* Color de fondo del botón */
+    -fx-text-fill: #ffffff; /* Color del texto del botón */
+    -fx-padding: 10px 20px; /* Relleno interno superior e inferior de 10px, relleno izquierdo y derecho de 20px */
+    -fx-border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos para el texto (Text) */
+Text {
+    -fx-font-size: 14px; /* Tamaño de fuente */
+    -fx-fill: #ff0000; /* Color del texto */
+    -fx-padding: 5px 0; /* Relleno interno superior de 5px, relleno inferior de 0px */
+}

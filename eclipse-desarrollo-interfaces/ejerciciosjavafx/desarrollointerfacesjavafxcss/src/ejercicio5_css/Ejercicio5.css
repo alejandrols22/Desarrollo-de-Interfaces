@@ -1,0 +1,118 @@
+
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: #ECEFF1;
+    -fx-padding: 20px;
+}
+
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #37474F;
+    -fx-padding: 5px;
+}
+
+
+#gridPane .label[styleClass="form-header"] {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center;
+    -fx-background-color: linear-gradient(to bottom, #42A5F5, #1E88E5);
+    -fx-padding: 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+/* CheckBox Styling */
+.check-box .box {
+    -fx-background-color: linear-gradient(to bottom, #90CAF9, #64B5F6);
+    -fx-border-radius: 3px;
+}
+
+.check-box .text {
+    -fx-font-weight: bold;
+    -fx-fill: #263238;
+}
+
+
+.radio-button .dot {
+    -fx-background-color: #42A5F5;
+    -fx-border-color: #1E88E5;
+}
+
+.radio-button .text {
+    -fx-font-weight: bold;
+    -fx-fill: #263238;
+}
+
+
+.combo-box-base {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #B0BEC5;
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: linear-gradient(to bottom, #90CAF9, #64B5F6);
+    -fx-background-radius: 5px;
+}
+
+
+.date-picker {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #B0BEC5;
+    -fx-border-radius: 5px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: linear-gradient(to bottom, #90CAF9, #64B5F6);
+    -fx-background-radius: 5px;
+}
+
+
+.hyperlink {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E88E5;
+    -fx-underline: true;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #0D47A1;
+}
+
+/* ColorPicker Styling */
+.color-picker {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #B0BEC5;
+    -fx-border-radius: 5px;
+}
+
+.color-picker .arrow-button {
+    -fx-background-color: linear-gradient(to bottom, #90CAF9, #64B5F6);
+    -fx-background-radius: 5px;
+}
+
+/* ImageView Styling */
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/* Additional intricate effects */
+.button, .check-box, .radio-button, .combo-box-base, .date-picker, .color-picker {
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.2), 5, 0.0, 0, 1);
+}
+
+/* Hover effects for interactive elements */
+.button:hover, .check-box:hover, .radio-button:hover, .combo-box-base:hover, .date-picker:hover, .color-picker:hover {
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 2);
+}
+
+/* Focused state for inputs */
+.text-field:focused, .combo-box-base:focused, .date-picker:focused, .color-picker:focused {
+    -fx-border-color: #42A5F5;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+

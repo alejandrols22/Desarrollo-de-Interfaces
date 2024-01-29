@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="170.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejercicio4_css.Ejercicio4CSSController">
+   <children>
+      <GridPane layoutY="14.0" prefHeight="197.0" prefWidth="402.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.59998779296876" minWidth="10.0" prefWidth="71.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.39997558593748" minWidth="10.0" prefWidth="209.39997558593748" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.199951171875" minWidth="10.0" prefWidth="51.9999908447266" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.00001525878906" minWidth="10.0" prefWidth="70.20001220703125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="99.4" minHeight="10.0" prefHeight="29.3999755859375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="81.8000244140625" minHeight="3.3999999999999915" prefHeight="27.000006103515624" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="115.99998779296877" minHeight="5.199990081787114" prefHeight="27.199987792968756" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="127.60001220703126" minHeight="0.0" prefHeight="33.599999999999994" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="114.40001831054687" minHeight="22.400048828124994" prefHeight="81.4" />
+        </rowConstraints>
+         <children>
+            <Label text="Importe" GridPane.columnIndex="0" />
+            <TextField fx:id="importeTextField" GridPane.columnIndex="1" />
+            <Button fx:id="iva4Button" mnemonicParsing="false" onAction="#calcularIVA4" prefHeight="26.0" prefWidth="58.0" text="Iva 4%" GridPane.columnIndex="3" />
+            <Button fx:id="iva10Button" mnemonicParsing="false" onAction="#calcularIVA10" text="Iva 10%" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="iva21Button" mnemonicParsing="false" onAction="#calcularIVA21" text="Iva 21%" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="limpiarButton" mnemonicParsing="false" onAction="#limpiar" text="Limpiar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="salirButton" mnemonicParsing="false" onAction="#salir" text="Salir" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="resultadoLabel" prefHeight="67.0" prefWidth="206.0" text="Resultado:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
