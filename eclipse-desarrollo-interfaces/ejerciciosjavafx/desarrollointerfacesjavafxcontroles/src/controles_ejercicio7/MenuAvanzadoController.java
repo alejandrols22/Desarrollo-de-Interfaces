@@ -31,8 +31,7 @@ public class MenuAvanzadoController {
         String category = getCategory(sourceMenuItem);
         System.out.println("Categoría: " + category + ", Opción seleccionada: " + sourceMenuItem.getText());
 
-        // Puedes añadir lógica adicional basada en el MenuItem seleccionado
-        // ...
+        
     }
 
     private String getCategory(MenuItem item) {
