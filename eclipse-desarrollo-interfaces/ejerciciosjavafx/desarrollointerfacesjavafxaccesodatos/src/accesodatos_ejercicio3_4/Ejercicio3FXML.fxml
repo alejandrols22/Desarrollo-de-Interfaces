@@ -10,7 +10,7 @@
 <?import javafx.scene.control.ComboBox?>
 
 
-<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accesodatos_ejercicio3.Controller">
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accesodatos_ejercicio3_4.Controller">
     <children>
         
         <TextField fx:id="nombreTextField" promptText="Nombre" />
@@ -20,6 +20,7 @@
         <TextField fx:id="sinopsisTextField" promptText="Sinopsis" />
          <ChoiceBox fx:id="choicePlataforma" prefWidth="150.0" />
         <Button fx:id="btnAgregarJuego" onAction="#agregarJuego" text="Añadir" />
+        <Button fx:id="btnBorrarJuego" text="Borrar" onAction="#borrarJuego"/>
     </children>
 </VBox>
 

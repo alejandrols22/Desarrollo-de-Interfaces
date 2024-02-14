@@ -33,10 +33,15 @@ public class Controller {
 
     private TVideoJuegoModel model;
 
-    public void inicializar(String dbURL, String dbUser, String dbPassword) throws SQLException {
-        model = new TVideoJuegoModel(dbURL, dbUser, dbPassword);
-        cargarCompanias();
-        cargarPlataformas();
+    @FXML
+    public void initialize() {
+        try {
+            this.model = new TVideoJuegoModel("jdbc:mysql://localhost:33006/dbgametop", "root", "1234");
+            cargarCompanias();
+            cargarPlataformas();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     private void cargarCompanias() {
@@ -68,6 +73,24 @@ public class Controller {
             mostrarMensajeError("Error de Base de Datos", "No se pudo añadir el juego a la base de datos.");
         }
     }
+    
+    @FXML
+    private void borrarJuego() {
+        String nombre = nombreTextField.getText();
+        if (nombre.isEmpty()) {
+            mostrarMensajeError("Error", "Por favor, ingrese el nombre del juego a borrar.");
+            return;
+        }
+
+        try {
+            model.borrarVideoJuegoPorNombre(nombre);
+            mostrarMensaje("Juego Borrado", "El juego ha sido borrado exitosamente.");
+            nombreTextField.clear(); 
+        } catch (SQLException e) {
+            mostrarMensajeError("Error de Base de Datos", "No se pudo borrar el juego: " + nombre);
+        }
+    }
+
 
     private void mostrarMensaje(String titulo, String contenido) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

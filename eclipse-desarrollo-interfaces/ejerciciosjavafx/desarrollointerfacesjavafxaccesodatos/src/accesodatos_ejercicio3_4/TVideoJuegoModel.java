@@ -32,6 +32,18 @@ public class TVideoJuegoModel {
             stmt.executeUpdate();
         }
     }
+    
+    public void borrarVideoJuegoPorNombre(String nombre) throws SQLException {
+        String sql = "DELETE FROM tvideojuegos WHERE nombre = ?";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, nombre);
+            int affectedRows = stmt.executeUpdate();
+            
+            if (affectedRows == 0) {
+                throw new SQLException("No se pudo borrar el juego con nombre: " + nombre);
+            }
+        }
+    }
 
     public void close() throws SQLException {
         if (this.conn != null) {
