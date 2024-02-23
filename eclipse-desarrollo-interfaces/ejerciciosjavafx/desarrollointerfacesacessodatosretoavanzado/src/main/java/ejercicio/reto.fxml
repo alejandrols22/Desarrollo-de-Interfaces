@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="mainContainer" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejercicio.Controller" spacing="20">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Text text="Añadir Libro"/>
+            <TextField fx:id="txtTitulo" promptText="Título"/>
+            <TextField fx:id="txtAutor" promptText="Autor"/>
+            <ChoiceBox fx:id="choiceEditorial" prefWidth="150"/>
+            <TextField fx:id="txtPaginas" promptText="Número de Páginas"/>
+            <HBox spacing="10">
+                <Button text="Agregar" onAction="#agregarLibro"/>
+                <Button text="Eliminar" onAction="#eliminarLibro"/>
+            </HBox>
+        </VBox>
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Text text="Libros"/>
+            <TableView fx:id="tablaLibros" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="columnaTitulo" text="Título" prefWidth="100"/>
+                    <TableColumn fx:id="columnaAutor" text="Autor" prefWidth="100"/>
+                    <TableColumn fx:id="columnaEditorial" text="Editorial" prefWidth="80"/>
+                    <TableColumn fx:id="columnaPaginas" text="Páginas" prefWidth="80"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </HBox>
+</VBox>
+

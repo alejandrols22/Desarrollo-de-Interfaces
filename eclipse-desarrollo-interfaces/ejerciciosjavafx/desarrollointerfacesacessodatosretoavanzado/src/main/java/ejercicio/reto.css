@@ -1,0 +1,51 @@
+/* styles.css */
+
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f0f0f0;
+}
+
+.text-input {
+    -fx-font-size: 14px;
+    -fx-pref-width: 150px;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+}
+
+.choice-box {
+    -fx-font-size: 14px;
+    -fx-pref-width: 150px;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 100px;
+    -fx-padding: 8px;
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Darker Green */
+}
+
+.table-view {
+    -fx-pref-width: 400px;
+    -fx-pref-height: 200px;
+}
+
+.table-column {
+    -fx-font-size: 14px;
+}
+
+.alert {
+    -fx-font-size: 14px;
+}

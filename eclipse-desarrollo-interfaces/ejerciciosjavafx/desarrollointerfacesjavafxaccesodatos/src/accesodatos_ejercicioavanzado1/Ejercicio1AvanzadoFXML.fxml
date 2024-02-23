@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accesodatos_ejercicioavanzado1.Controller" spacing="10">
+    <TableView fx:id="tableViewAlumnos" prefHeight="200" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50">
+                <cellValueFactory><PropertyValueFactory property="id" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="nombreColumn" text="Nombre" prefWidth="150">
+                <cellValueFactory><PropertyValueFactory property="nombre" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="apellido1Column" text="Apellido 1" prefWidth="100">
+                <cellValueFactory><PropertyValueFactory property="apellido1" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="apellido2Column" text="Apellido 2" prefWidth="100">
+                <cellValueFactory><PropertyValueFactory property="apellido2" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="fechaNacimientoColumn" text="Fecha Nacimiento" prefWidth="120">
+                <cellValueFactory><PropertyValueFactory property="fechaNacimiento" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="esRepetidorColumn" text="Es Repetidor" prefWidth="100">
+                <cellValueFactory><PropertyValueFactory property="esRepetidor" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="telefonoColumn" text="Teléfono" prefWidth="100">
+                <cellValueFactory><PropertyValueFactory property="telefono" /></cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</VBox>
+

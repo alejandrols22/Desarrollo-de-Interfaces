@@ -1,0 +1,20 @@
+.table-view {
+    -fx-table-cell-border-color: transparent;
+    -fx-selection-bar: #b3d7ff;
+    -fx-selection-bar-non-focused: #c8c8c8;
+}
+
+.table-column {
+    -fx-border-color: silver;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell {
+    -fx-border-color: lightgray;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header-background .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
